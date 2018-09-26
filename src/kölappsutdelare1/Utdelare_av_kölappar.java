@@ -9,7 +9,7 @@ public class Utdelare_av_kölappar {
         
         
         //Vad händer om vi skapar ett objekt till?
-        QueueTicketDispenser q2 = q;
+        QueueTicketDispenser q2 = new QueueTicketDispenser();
         myNumber = q2.getNextNumber();
         System.out.println("Könummer: " + myNumber);
       
