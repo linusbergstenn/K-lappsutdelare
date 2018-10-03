@@ -2,18 +2,24 @@ package Kölappsutdelare1;
 
 public class QueueTicketDispenser {
     //static private int objectCount = 0;
-    static private int nr = 1;
+    private int nr;
+    private static QueueTicketDispenser dispenser = new QueueTicketDispenser();
     
-/*    public QueueTicketDispenser(){
+    public static QueueTicketDispenser getInstance(){
+        return dispenser;
+    }
+    
+   private QueueTicketDispenser(){
         
-        if(objectCount > 0){
+        /*if(objectCount > 0){
             System.out.println("Fler än ett objekt skapat");
             System.exit(0);
         }
         nr = 1;
-        objectCount++;
+        objectCount++;*/
+        nr = 1;
         
-    }*/
+    }
     
     public int getNextNumber(){
         return nr++;
