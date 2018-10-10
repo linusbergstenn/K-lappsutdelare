@@ -13,11 +13,12 @@ public class Utdelare_av_kölappar {
         myNumber = q2.getNextNumber();
         System.out.println("Könummer: " + myNumber);*/
         
-        int myNumber = QueueTicketDispenser.getInstance().getNextNumber();
-        System.out.println("Könummer: " + myNumber);
+        int myNumber;
         
+        for(int i = 0; i < 5; i++){
         myNumber = QueueTicketDispenser.getInstance().getNextNumber();
         System.out.println("Könummer: " + myNumber);
+    }
       
     }
 }

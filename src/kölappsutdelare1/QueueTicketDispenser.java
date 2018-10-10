@@ -3,10 +3,13 @@ package Kölappsutdelare1;
 public class QueueTicketDispenser {
     //static private int objectCount = 0;
     private int nr;
-    private static QueueTicketDispenser dispenser = new QueueTicketDispenser();
+    private static QueueTicketDispenser dispenser;
     
     public static QueueTicketDispenser getInstance(){
+        if(dispenser == null)
+            dispenser = new QueueTicketDispenser();
         return dispenser;
+        
     }
     
    private QueueTicketDispenser(){
